@@ -48,7 +48,7 @@ cd imagenet
 Train the FSNN-18 (AAP) with 8 GPUs:
 
 ```bash
-python -m torch.distributed.launch --nproc_per_node=8 --use_env train.py --cos_lr_T 320 --model dsnn18 -b 64 --output-dir ./logs --tb --print-freq 500 --amp --cache-dataset --connect_f OR --T 4 --lr 0.1 --epoch 320 --data-path /datasets/imagenet
+python -m torch.distributed.launch --nproc_per_node=8 --use_env train.py --cos_lr_T 320 --model dsnn18 -b 64 --output-dir ./logs --tb --print-freq 500 --amp --cache-dataset --connect_f IAND --T 4 --lr 0.1 --epoch 320 --data-path /datasets/imagenet
 ```
 
 ## Citation
